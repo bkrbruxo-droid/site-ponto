@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Registro de Guarnição</h2>
+
+    <label>Nome do Líder</label>
+    <input type="text" id="lider">
+
+    <label>Guarnição</label>
+    <input type="text" id="guarnicao">
+
+    <label>Membros</label>
+    <textarea id="membros"></textarea>
+
+    <label>Data e Hora</label>
+    <input type="text" id="dataHora" readonly>
+
+<button onclick="iniciarRegistro()">▶ Iniciar</button>
+<button onclick="finalizarRegistro()">⏹ Finalizar</button>
+
+<p id="msg"></p>
+
+<h3>Registros Salvos</h3>
+<ul id="listaRegistros"></ul>
+
+
+
+    <script src="registro.js"></script>
+</body>
+</html>
+<h3>Filtrar por Líder</h3>
+<input type="text" id="filtroLider" placeholder="Nome do líder">
+<button onclick="filtrarPorLider()">Filtrar</button>
+<button onclick="mostrarRegistros()">Mostrar Todos</button>
+<ul id="listaRegistros"></ul>
+
+<label>Data e Hora (automática)</label>
+<input type="text" id="dataHora" readonly>

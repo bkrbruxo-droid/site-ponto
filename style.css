@@ -31,9 +31,19 @@ img {
 .nome {
   text-align: center;
 }
+
 img {
-  margin-top: -50px; /* sobe a imagem */
+  margin-top: -100px;
 }
+button {
+  position: relative;
+  top: 70px;
+}
+.btn {
+  width: 250px;     /* largura fixa */
+  padding: 8px 0;   /* altura igual */
 
-
-
+  position: relative;
+  top: 20px;        /* desce */
+  left: 300px;        /* direita (+) esquerda (-) */
+}
